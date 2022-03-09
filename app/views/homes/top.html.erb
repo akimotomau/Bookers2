@@ -1,0 +1,12 @@
+<% if flash[:notice] %>
+   <p id="notice">
+    <%= flash[:notice] %>
+   </p>
+<% end %>
+<h1>welcome to <i class="fa-solid fas fa-book"></i>Bookers!!</h1>
+<P>in <i class="fa-solid fas fa-book"></i>Bookers,</P>
+<p>you can share and exchange your opinions, inpressions, and emotions</p>
+<p>about various books!</p>
+
+  <%= link_to "Log in", new_user_session_path %>
+  <%= link_to "Sign up", new_user_registration_path %>
